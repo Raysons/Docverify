@@ -110,7 +110,87 @@
         <!-- Content Area -->
         <div class="max-w-[85rem] px-4 py-6 sm:px-6 lg:px-8 lg:py-6 mx-auto">
             <div class="mx-auto max-w-2xl">
-                here..
+                <!-- Card -->
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 dark:text-neutral-200">
+                        Welcome back John,
+                    </h2>
+                    <p class="text-sm text-gray-600 dark:text-neutral-400">
+                        Great news, you've joined Doc Verif. You can now make transfers and more.
+                    </p>
+                </div>
+                <ul class="grid w-full gap-6 md:grid-cols-2">
+                    <li>
+                        <input type="radio" id="hosting-small" name="hosting" value="hosting-small" class="hidden peer" required />
+                        <label for="hosting-small" class="inline-flex items-center justify-between w-full p-5 text-gray-800 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 dark:peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">                           
+                            <a href="pay.html" class="flex justify-between items-center w-full">
+                                <div class="block">
+                                    <div class="w-full text-blue-600 text-lg font-semibold">#CERT1234T</div>
+                                    <div class="w-full">Pay for You Certificate</div>
+                                </div>
+                                <button class="text-blue-700 font-bold">PAY NOW</button>
+                            </a>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="hosting-small" name="hosting" value="hosting-small" class="hidden peer" required />
+                        <label for="hosting-small" class="inline-flex items-center justify-between w-full p-5 text-gray-800 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 dark:peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">                           
+                            <a href="Apply.html" class="flex justify-between items-center w-full">
+                                <div class="block">
+                                    <div class="w-full text-blue-600 text-lg font-semibold">Create Certificate</div>
+                                    <div class="w-full">Generate a quick certificate now!</div>
+                                </div>
+                                <svg class="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                </svg>
+                            </a>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="hosting-small" name="hosting" value="hosting-small" class="hidden peer" required />
+                        <label for="hosting-small" class="inline-flex items-center justify-between w-full p-5 text-gray-800 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 dark:peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">                           
+                            <a href="Verify.html" class="flex justify-between items-center w-full">
+                                <div class="block">
+                                    <div class="w-full text-blue-600 text-lg font-semibold">Verify Certificate</div>
+                                    <div class="w-full">Instantly verify your existing certificate!</div>
+                                </div>
+                                <svg class="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                </svg>
+                            </a>
+                        </label>
+                    </li>
+                </ul>
+                <h3 class="mb-5 mt-10 text-lg font-medium text-gray-900 dark:text-white">Certificates History</h3>
+                <!-- End Card -->
+                <!-- List Group -->
+                <ul class="mt-5 flex flex-col">
+                    <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:border-neutral-700 dark:text-neutral-200">
+                        <div class="flex items-center justify-between w-full">
+                            <span>CERT1234</span>
+                            <span class="text-blue-700">Rejected</span>
+                        </div>
+                    </li>
+                    <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:border-neutral-700 dark:text-neutral-200">
+                        <div class="flex items-center justify-between w-full">
+                            <span>CERT1234</span>
+                            <span class="text-green-700">Approved</span>
+                        </div>
+                    </li>
+                    <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:border-neutral-700 dark:text-neutral-200">
+                        <div class="flex items-center justify-between w-full">
+                            <span>CERT1234</span>
+                            <span>Pending</span>
+                        </div>
+                    </li>
+                    <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-semibold bg-gray-50 border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-200">
+                        <div class="flex items-center justify-between w-full">
+                            <span>CERT1234</span>
+                            <span>Issued</span>
+                        </div>
+                    </li>
+                </ul>
+                <!-- End List Group -->
             </div>
         </div>
         <!-- End Content Area -->

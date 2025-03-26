@@ -42,7 +42,7 @@
 
 <body class="bg-gray-50">
     <!-- Desktop Navigation Drawer - Hidden on mobile -->
-    <div id="desktop-drawer" class="desktop-drawer fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 z-40 hidden md:block border-r border-gray-200">
+    <div id="desktop-drawer" class="desktop-drawer fixed top-0 left-0 h-full w-64 bg-blue-800 shadow-lg transform transition-transform duration-300 z-40 hidden md:block border-r border-gray-200">
         <div class="p-5 border-b border-gray-200">
             <h2 class="text-xl font-semibold text-blue-800">DocVerif</h2>
         </div>
@@ -85,25 +85,26 @@
         </nav>
     </div>
 
-    <!-- Main Content -->
+    <!-- Desktop Navigation Drawer - Hidden on mobile -->
     <div id="main-content" class="main-content">
         <!-- ========== HEADER ========== -->
-        <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-30 w-full bg-white border-b text-sm py-2.5 sm:py-4">
+        <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-30 w-full bg-blue-700 border-b text-sm py-2.5 sm:py-4">
             <nav class="max-w-7xl flex basis-full items-center w-full mx-auto px-4 sm:px-6 lg:px-8" aria-label="Global">
                 <div class="me-5 md:me-8">
-                    <a class="flex-none text-blue-600 text-xl font-semibold" href="#" aria-label="Brand">DocVerif</a>
+                    <a class="flex-none text-white text-xl font-semibold" href="#" aria-label="Brand">DocVerif</a>
                 </div>
 
                 <div class="w-full flex items-center justify-end ms-auto sm:justify-between sm:gap-x-3 sm:order-3">
                     <!-- Toggle drawer on desktop -->
-                    <button id="drawer-toggle" class="p-2 rounded-md hover:bg-gray-200 hidden md:block">
-                        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <button id="drawer-toggle" class="p-2 rounded-md hover:bg-blue-600 hidden md:block">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
                 </div>
             </nav>
         </header>
+        <!-- end Desktop Top Navigation Drawer -->
         <!-- ========== END HEADER ========== -->
 
         <!-- Content Area -->

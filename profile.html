@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agencify-Agent portal</title>
+    <title>Docverif-Agent portal</title>
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="style.css">
 
@@ -17,7 +17,7 @@
     <header class="sticky top-0 inset-x-0 flex flex-wrap sm:justify-start sm:flex-nowrap z-[48] w-full bg-white border-b text-sm py-2.5 sm:py-4 lg:ps-64 dark:bg-gray-800 dark:border-gray-700">
         <nav class="flex basis-full items-center w-full mx-auto px-4 sm:px-6 md:px-8" aria-label="Global">
             <div class="me-5 lg:me-0 lg:hidden">
-                <a class="flex-none text-xl font-semibold dark:text-white" href="#" aria-label="Brand">Agencify</a>
+                <a class="flex-none text-xl font-semibold dark:text-white" href="#" aria-label="Brand">Docverif</a>
             </div>
 
             <div class="w-full flex items-center justify-end ms-auto sm:justify-between sm:gap-x-3 sm:order-3">
@@ -70,7 +70,7 @@
                         <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg p-2 dark:bg-gray-800 dark:border dark:border-gray-700" aria-labelledby="hs-dropdown-with-header">
                             <div class="py-3 px-5 -m-2 bg-gray-100 rounded-t-lg dark:bg-gray-700">
                                 <p class="text-sm text-gray-500 dark:text-gray-400">Signed in as</p>
-                                <p class="text-sm font-medium text-gray-800 dark:text-gray-300">ray@agencify.insure</p>
+                                <p class="text-sm font-medium text-gray-800 dark:text-gray-300">ray@Docverif.insure</p>
                             </div>
                             <div class="mt-2 py-2 first:pt-0 last:pb-0">
                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="notifications.html">
@@ -125,7 +125,7 @@
     <!-- Sidebar -->
     <div id="application-sidebar" class="hs-overlay hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform hidden fixed top-0 start-0 bottom-0 z-[60] w-64 bg-white border-e border-gray-200 pt-7 pb-10 overflow-y-auto lg:block lg:translate-x-0 lg:end-auto lg:bottom-0 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-slate-700 dark:[&::-webkit-scrollbar-thumb]:bg-slate-500 dark:bg-gray-800 dark:border-gray-700">
         <div class="px-6">
-            <a class="flex-none text-xl font-semibold dark:text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#" aria-label="Brand">Agencify</a>
+            <a class="flex-none text-xl font-semibold dark:text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#" aria-label="Brand">Docverif</a>
         </div>
 
         <nav class="hs-accordion-group p-6 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
@@ -276,10 +276,6 @@
                         Password
                     </button>
                     <button type="button" class="hs-tab-active:font-semibold hs-tab-active:border-blue-600 hs-tab-active:text-blue-600 py-4 px-1 inline-flex items-center gap-x-2 border-b-2 border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-400 dark:hover:text-blue-500"
-                        id="tabs-with-underline-item-3" data-hs-tab="#tabs-with-underline-3" aria-controls="tabs-with-underline-3" role="tab">
-                        Insurer
-                    </button>
-                    <button type="button" class="hs-tab-active:font-semibold hs-tab-active:border-blue-600 hs-tab-active:text-blue-600 py-4 px-1 inline-flex items-center gap-x-2 border-b-2 border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-400 dark:hover:text-blue-500"
                         id="tabs-with-underline-item-4" data-hs-tab="#tabs-with-underline-4" aria-controls="tabs-with-underline-3" role="tab">
                         Notifications
                     </button>
@@ -342,8 +338,9 @@
                                 <label for="" class="block text-sm font-bold text-gray-900 sm:mt-px sm:pt-2"> Type </label>
                                 <div class="mt-2 sm:mt-0 sm:col-span-2">
                                     <select class="block w-full py-3 pl-4 pr-10 border-gray-300 rounded-lg focus:outline-none focus:ring-blue-600 focus:border-blue-600 sm:text-sm">
-                                        <option>Individual</option>
-                                        <option>Agency</option>
+                                        <option>Product Admin</option>
+                                        <option>General Admin</option>
+                                        <option>Super Admin</option>
                                     </select>
                                 </div>
                             </div>
@@ -406,15 +403,15 @@
                         <div class="px-4 py-5 sm:p-6">
                             <div class="sm:flex sm:items-center sm:justify-between">
                                 <div>
-                                    <p class="text-base font-bold text-gray-900">Synced insurers</p>
-                                    <p class="mt-1 text-sm font-medium text-gray-500">Insurer you are onboarded on</p>
+                                    <p class="text-base font-bold text-gray-900">Synced Loriums</p>
+                                    <p class="mt-1 text-sm font-medium text-gray-500">Lorium you are onboarded on</p>
                                 </div>
 
 
                                 <div>
                                     <div class="text-center">
                                         <button type="button" class="py-2.5 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#e">
-                                            Join Another Insurer
+                                            Join Another Lorium
                                         </button>
                                     </div>
 
@@ -432,7 +429,7 @@
                                                 <div class="p-4 sm:p-10 overflow-y-auto">
                                                     <div class="mb-6 text-center">
                                                         <h3 class="mb-2 text-xl font-bold text-gray-800 dark:text-gray-200">
-                                                            Join another insurer
+                                                            Join another Lorium
                                                         </h3>
                                                         <p class="text-gray-500">
                                                             Enter OTP sent to *******72 to sync portfolio

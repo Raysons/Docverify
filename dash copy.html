@@ -352,9 +352,10 @@
             });
 
             // Show new order form
-            createOrderBtn.addEventListener('click', function() {
-                newOrderForm.classList.remove('hidden');
-            });
+            createOrderBtn.addEventListener('click',
+                () {
+                    newOrderForm.classList.remove('hidden');
+                });
 
             // Hide new order form
             closeFormBtn.addEventListener('click', function() {
