@@ -13,120 +13,6 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
 
     <style>
-
-.container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-        }
-        
-        .payment-tabs {
-            display: flex;
-            border-bottom: 1px solid #e5e7eb;
-            margin-bottom: 1.5rem;
-        }
-        
-        .payment-tab {
-            padding: 0.75rem 1.25rem;
-            font-weight: 500;
-            cursor: pointer;
-            border-bottom: 2px solid transparent;
-        }
-        
-        .payment-tab.active {
-            color: #3b82f6;
-            /* Changed to blue */
-            border-bottom-color: #3b82f6;
-            /* Changed to blue */
-        }
-        
-        .payment-content {
-            display: none;
-        }
-        
-        .payment-content.active {
-            display: block;
-        }
-        
-        .input-group {
-            margin-bottom: 1.5rem;
-        }
-        
-        .input-label {
-            display: block;
-            font-weight: 500;
-            margin-bottom: 0.5rem;
-        }
-        
-        .input-field {
-            width: 100%;
-            border: 1px solid #e5e7eb;
-            border-radius: 0.5rem;
-            padding: 0.75rem 1rem;
-        }
-        
-        .card-input-group {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-        }
-        
-        .continue-button {
-            width: 100%;
-            background-color: #3b82f6;
-            /* Changed to blue */
-            color: white;
-            border: none;
-            border-radius: 0.5rem;
-            padding: 1rem;
-            font-weight: 500;
-            margin-top: 1.5rem;
-            cursor: pointer;
-        }
-        
-        .continue-button:hover {
-            background-color: #2563eb;
-            /* Changed to darker blue */
-        }
-        
-        .notification {
-            background-color: #f3f4f6;
-            border-radius: 0.5rem;
-            padding: 1rem;
-            margin: 1rem 0;
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-        }
-        
-        .notification-icon {
-            width: 2.5rem;
-            height: 2.5rem;
-            border-radius: 9999px;
-            background-color: #3b82f6;
-            /* Changed to blue */
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-        
-        .radio-group {
-            display: flex;
-            gap: 1rem;
-            margin-top: 0.5rem;
-        }
-        
-        .radio-option {
-            flex: 1;
-            border: 1px solid #e5e7eb;
-            border-radius: 0.5rem;
-            padding: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
         /* Custom styles for the app */
         
         body {
@@ -180,7 +66,7 @@
                     </a>
                 </li>
                 <li class="mb-1">
-                    <a href="#" class="flex items-center p-3 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <a href="notifications.html" class="flex items-center p-3 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
                         <svg class="w-5 h-5 mr-3 text-gray-500 group-hover:text-blue-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 2a6 6 0 0 0-6 6v3c0 .75-.27 1.48-.76 2.05L2 15h16l-1.24-1.95A3.007 3.007 0 0 1 16 11V8a6 6 0 0 0-6-6Zm0 16c1.1 0 2-.9 2-2H8c0 1.1.9 2 2 2Z"/>
                         </svg>
@@ -282,6 +168,7 @@
                 </div>
             </nav>
             
+            
         </header>
         <!-- end Desktop Top Navigation Drawer -->
         <!-- ========== END HEADER ========== -->
@@ -289,180 +176,97 @@
         <!-- Content Area -->
         <div class="max-w-[85rem] px-4 py-6 sm:px-6 lg:px-8 lg:py-6 mx-auto">
             <div class="mx-auto max-w-2xl">
-                <div class="container">
-                    <h1 class="text-3xl font-bold text-center mb-8">Top Up Your Wallet</h1>
-            
-                    <div class="payment-tabs">
-                        <div class="payment-tab active" data-tab="mpesa">Mpesa</div>
-                        <div class="payment-tab" data-tab="card">Card</div>
-                        <div class="payment-tab" data-tab="bank">Bank</div>
-                        <div class="payment-tab" data-tab="cheque">Cheque</div>
+                <!--  Notification  Section -->
+                <!--  Pass Table Section -->
+                <div class="mt-8 overflow-hidden bg-white border border-gray-200 rounded-xl">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="sm:flex sm:items-center sm:justify-between">
+                            <div>
+                                <p class="text-base font-bold text-gray-900">Recent notifications</p>
+                                <p class="mt-1 text-sm font-medium text-gray-500">Leverage your mobile app for improved business notifications.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="flow-root mt-8">
+                            <div class="-my-5 divide-y divide-gray-100">
+                                <div class="py-5">
+                                    <div class="flex items-center">
+                                        <div class="relative flex-shrink-0">
+                                            <img class="object-cover w-10 h-10 rounded-full" src="https://landingfoliocom.imgix.net/store/collection/clarity-dashboard/images/previews/settings/1/rareblocks-logo.png" alt="" />
+                                        </div>
+
+                                        <div class="ml-4">
+                                            <p class="text-sm font-bold text-blue-600">Your Comprehensive Car Insurance for KCD 123A expires on 27-Apr-2025.</p>
+                                            <p class="mt-1 text-sm font-medium text-gray-500">10:31 am | 24-Mar-2025</p>
+                                        </div>
+
+                                        <div class="ml-auto">
+                                            <a href="renewals_details.html" title="" class="text-sm font-medium text-blue-600 transition-all duration-200 hover:text-blue-600"> Renew </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="py-5">
+                                    <div class="flex items-center">
+                                        <div class="relative flex-shrink-0">
+                                            <img class="object-cover w-10 h-10 rounded-full" src="https://landingfoliocom.imgix.net/store/collection/clarity-dashboard/images/previews/settings/1/astrona-logo.png" alt="" />
+                                        </div>
+
+                                        <div class="ml-4">
+                                            <p class="text-sm font-bold text-gray-900">You have 10 pending insurance documents needing review before 27-Apr-2025</p>
+                                            <p class="mt-1 text-sm font-medium text-gray-500">10:30 am | 24-Mar-2025</p>
+                                        </div>
+
+                                        <div class="ml-auto">
+                                            <a href="All_Trans.html" title="" class="text-sm font-medium text-gray-600 transition-all duration-200 hover:text-blue-600"> View </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-            
-                    <form id="payment-form">
-                        <!-- Mpesa Payment -->
-                        <div class="payment-content active" id="mpesa-content">
-                            <div class="notification">
-                                <div class="notification-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="12" y1="8" x2="12" y2="12"></line>
-                                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                                    </svg>
-                                </div>
-                                <div class="text-gray-700">
-                                    An STK push will be sent to your phone. Please enter your Safaricom number.
-                                </div>
-                            </div>
-            
-                            <div class="input-group">
-                                <label class="input-label">Mobile Number</label>
-                                <input type="tel" class="input-field" placeholder="07XX XXX XXX" pattern="0[0-9]{9}">
-                            </div>
-            
-                            <div class="input-group">
-                                <label class="input-label">Amount (KES)</label>
-                                <input type="number" class="input-field" placeholder="Enter amount">
-                            </div>
-                        </div>
-            
-                        <!-- Card Payment -->
-                        <div class="payment-content" id="card-content">
-                            <div class="input-group">
-                                <label class="input-label">Card Number</label>
-                                <input type="text" class="input-field" placeholder="XXXX XXXX XXXX XXXX">
-                            </div>
-            
-                            <div class="input-group">
-                                <label class="input-label">Cardholder Name</label>
-                                <input type="text" class="input-field" placeholder="Name on card">
-                            </div>
-            
-                            <div class="card-input-group">
-                                <div class="input-group">
-                                    <label class="input-label">Expiry Date</label>
-                                    <input type="text" class="input-field" placeholder="MM/YY">
-                                </div>
-            
-                                <div class="input-group">
-                                    <label class="input-label">CVV</label>
-                                    <input type="text" class="input-field" placeholder="XXX">
-                                </div>
-                            </div>
-            
-                            <div class="input-group">
-                                <label class="input-label">Amount</label>
-                                <input type="number" class="input-field" placeholder="Enter amount">
-                            </div>
-                        </div>
-            
-                        <!-- Bank Payment -->
-                        <div class="payment-content" id="bank-content">
-                            <div class="input-group">
-                                <label class="input-label">Full name of the account holder</label>
-                                <input type="text" class="input-field" placeholder="Enter account holder name">
-                            </div>
-            
-                            <div class="input-group">
-                                <label class="input-label">Bank Name</label>
-                                <input type="text" class="input-field" placeholder="Enter bank name">
-                            </div>
-            
-                            <div class="input-group">
-                                <label class="input-label">Account Number</label>
-                                <input type="text" class="input-field" placeholder="Enter account number">
-                            </div>
-            
-                            <div class="input-group">
-                                <label class="input-label">Branch Code</label>
-                                <input type="text" class="input-field" placeholder="Enter branch code">
-                            </div>
-            
-                            <div class="input-group">
-                                <label class="input-label">Account type</label>
-                                <div class="radio-group">
-                                    <label class="radio-option">
-                                        <input type="radio" name="account-type" value="checking">
-                                        <span>Checking</span>
-                                    </label>
-                                    <label class="radio-option">
-                                        <input type="radio" name="account-type" value="savings">
-                                        <span>Savings</span>
-                                    </label>
-                                </div>
-                            </div>
-            
-                            <div class="input-group">
-                                <label class="input-label">Amount</label>
-                                <input type="number" class="input-field" placeholder="Enter amount">
-                            </div>
-                        </div>
-            
-                        <!-- Cheque Payment -->
-                        <div class="payment-content" id="cheque-content">
-                            <div class="input-group">
-                                <label class="input-label">Cheque Number</label>
-                                <input type="text" class="input-field" placeholder="Enter cheque number">
-                            </div>
-            
-                            <div class="input-group">
-                                <label class="input-label">Bank Name</label>
-                                <input type="text" class="input-field" placeholder="Enter bank name">
-                            </div>
-            
-                            <div class="input-group">
-                                <label class="input-label">Cheque Date</label>
-                                <input type="date" class="input-field">
-                            </div>
-            
-                            <div class="input-group">
-                                <label class="input-label">Amount</label>
-                                <input type="number" class="input-field" placeholder="Enter amount">
-                            </div>
-            
-                            <div class="input-group">
-                                <label class="input-label">Payee Name</label>
-                                <input type="text" class="input-field" placeholder="Enter payee name">
-                            </div>
-                        </div>
-            
-                        <a href="success topup.html" target="_blank">
-                            <button type="button" class="continue-button">Top up</button>
-                        </a>
-                    </form>
                 </div>
-            
-                <script>
-                    // Tab switching functionality
-                    const tabs = document.querySelectorAll('.payment-tab');
-                    const contents = document.querySelectorAll('.payment-content');
-            
-                    tabs.forEach(tab => {
-                        tab.addEventListener('click', () => {
-                            const target = tab.getAttribute('data-tab');
-            
-                            // Update active tab
-                            tabs.forEach(t => t.classList.remove('active'));
-                            tab.classList.add('active');
-            
-                            // Update active content
-                            contents.forEach(content => {
-                                content.classList.remove('active');
-                                if (content.id === `${target}-content`) {
-                                    content.classList.add('active');
-                                }
-                            });
-                        });
-                    });
-            
-                    // Form submission (for demo purposes)
-                    const continueButton = document.querySelector('.continue-button');
-                    continueButton.addEventListener('click', () => {
-                        // Get active payment method
-                        const activeTab = document.querySelector('.payment-tab.active').getAttribute('data-tab');
-                        alert(`Processing ${activeTab} payment. In a real application, this would submit the form.`);
-                    });
-                </script>
+                <!-- End  Notification  Section -->
+            </div>
+            <div id="tabs-with-underline-5" class="hidden" role="tabpanel" aria-labelledby="tabs-with-underline-item-3">
+                <!--  Notification  Section -->
+
+                <div class="mt-6">
+                    <p class="text-base font-bold text-gray-900">Renew license</p>
+                    <p class="mt-1 text-sm font-medium text-gray-500">Update your annual license</p>
+                </div>
+
+                <form action="#" method="POST" class="max-w-3xl mt-12">
+                    <div class="space-y-8">
+
+
+
+                        <div class="sm:grid sm:grid-cols-3 sm:gap-5 sm:items-start">
+                            <div class="sm:mt-px sm:pt-2">
+                                <label for="" class="block text-sm font-bold text-gray-900"> IRA license </label>
+
+                            </div>
+                            <div class="mt-2 sm:mt-0 sm:col-span-2">
+                                <div class="relative flex">
+                                    <div class="inline-flex items-center px-3 text-gray-900 border border-r-0 border-gray-300 rounded-l-lg bg-gray-50 sm:text-sm">Active</div>
+
+                                    <input type="text" name="" id="" placeholder="" value="IRA1234/24" class="border flex-1 block w-full min-w-0 px-4 py-3 placeholder-gray-500 border-gray-300 rounded-none rounded-r-lg focus:ring-indigo-600 focus:border-indigo-600 sm:text-sm caret-indigo-600"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="mt-6 sm:mt-12">
+                        <button type="submit" class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold leading-5 text-white transition-all duration-200 bg-gray-200 border border-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 hover:bg-blue-500">
+                            Update
+                        </button>
+                    </div>
+                </form>
+                <!-- End  Notification  Section -->
+            </div>
             </div>
         </div>
         <!-- End Content Area -->
